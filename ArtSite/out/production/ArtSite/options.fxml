@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F3DCD4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.controller.ControllerOptions">
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="214.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="220.0" layoutX="-3.0" layoutY="1.0" opacity="0.63" pickOnBounds="true">
+               <image>
+                  <Image url="@options.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </right>
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="382.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="102.0" layoutY="33.0" prefHeight="38.0" prefWidth="202.0" text="Welcome back!">
+               <font>
+                  <Font name="Century Gothic Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="119.0" layoutY="79.0" prefHeight="38.0" prefWidth="168.0" text="Choose your option">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="salesButton" layoutX="108.0" layoutY="150.0" mnemonicParsing="false" onAction="#salesButtonOnAction" prefHeight="34.0" prefWidth="178.0" style="-fx-background-color: #424445;" text="What's for sale" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="registerProductButton" layoutX="108.0" layoutY="199.0" mnemonicParsing="false" onAction="#registerProductButtonOnAction" prefHeight="35.0" prefWidth="179.0" style="-fx-background-color: #424445;" text="Register a product to sell" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="logOutButton" layoutX="108.0" layoutY="248.0" mnemonicParsing="false" onAction="#logOutButtonOnAction" prefHeight="36.0" prefWidth="177.0" style="-fx-background-color: #424445;" text="Log out" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="exitButton" layoutX="108.0" layoutY="298.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="35.0" prefWidth="178.0" style="-fx-background-color: #94213b;" text="Exit application" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font></Button>
+         </children>
+         <effect>
+            <Blend>
+               <topInput>
+                  <Blend />
+               </topInput>
+            </Blend>
+         </effect>
+      </AnchorPane>
+   </left>
+</BorderPane>

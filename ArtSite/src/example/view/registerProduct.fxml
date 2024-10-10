@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F3DCD4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.controller.ControllerRegisterProduct">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="383.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="goBackButton" layoutY="373.0" mnemonicParsing="false" onAction="#goBackButtonOnAction" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #424445;" text="Go back" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font></Button>
+            <Label layoutX="60.0" layoutY="14.0" prefHeight="26.0" prefWidth="234.0" text="Add your product here">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="addProductButton" layoutX="124.0" layoutY="327.0" mnemonicParsing="false" onAction="#addProductButtonOnAction" prefHeight="30.0" prefWidth="106.0" style="-fx-background-color: #424445;" text="Add product" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font></Button>
+            <Label layoutX="21.0" layoutY="78.0" prefHeight="22.0" prefWidth="64.0" text="Title*" textFill="#181717">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="113.0" prefHeight="22.0" prefWidth="82.0" text="Description">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font></Label>
+            <Label layoutX="21.0" layoutY="147.0" prefHeight="22.0" prefWidth="64.0" text="Price*">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="177.0" prefHeight="22.0" prefWidth="97.0" text="Creation date*">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font></Label>
+            <Label layoutX="21.0" layoutY="214.0" prefHeight="22.0" prefWidth="83.0" text="Artist name*">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font></Label>
+            <Label layoutX="21.0" layoutY="249.0" prefHeight="22.0" prefWidth="89.0" text="Artist country*">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font></Label>
+            <Label layoutX="21.0" layoutY="283.0" prefHeight="22.0" prefWidth="64.0" text="Genre*">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font></Label>
+            <Label fx:id="messageAddProductLabel" layoutX="21.0" layoutY="40.0" prefHeight="18.0" prefWidth="294.0" textAlignment="CENTER" textFill="#ef0808">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font></Label>
+            <TextField fx:id="titleAddProductField" layoutX="123.0" layoutY="75.0" prefHeight="9.0" prefWidth="147.0" promptText="title..." style="-fx-border-color: #9c9a98;" />
+            <TextField fx:id="descriptionAddProductField" layoutX="123.0" layoutY="110.0" prefHeight="9.0" prefWidth="147.0" promptText="description..." style="-fx-border-color: #9c9a98;" />
+            <TextField fx:id="priceAddProductField" layoutX="123.0" layoutY="144.0" prefHeight="9.0" prefWidth="147.0" promptText="price..." style="-fx-border-color: #9c9a98;" />
+            <TextField fx:id="artistNameAddProductField" layoutX="124.0" layoutY="212.0" prefHeight="9.0" prefWidth="147.0" promptText="artist name..." style="-fx-border-color: #9c9a98;" />
+            <TextField fx:id="artistCountryAddProductField" layoutX="124.0" layoutY="247.0" prefHeight="9.0" prefWidth="147.0" promptText="artist country..." style="-fx-border-color: #9c9a98;" />
+            <TextField fx:id="genreAddProductField" layoutX="123.0" layoutY="281.0" prefHeight="21.0" prefWidth="147.0" promptText="genre..." style="-fx-border-color: #9c9a98;" />
+            <DatePicker fx:id="dateAddProductDatePicker" layoutX="124.0" layoutY="176.0" prefHeight="17.0" prefWidth="146.0" promptText="date..." style="-fx-border-color: #9c9a98;" />
+            <Button fx:id="seeAllProductsButton" layoutX="256.0" layoutY="372.0" mnemonicParsing="false" onAction="#seeAllProductsButtonOnAction" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #424445;" text="See all products" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="seeAllGenresButton" layoutX="272.0" layoutY="283.0" mnemonicParsing="false" onAction="#seeAllGenresButtonOnAction" style="-fx-background-color: #ebe8e9;" text="Genres" textFill="#535353">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="246.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="225.0" layoutX="-3.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@addproduct.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </right>
+</BorderPane>
