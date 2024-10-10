@@ -18,7 +18,7 @@ The Art Shop Project is a Java-based application that utilizes MVC architecture,
 ### Installation
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/art-shop-project.git
+    git clone https://github.com/flaviamarincau/art-shop-project.git
     ```
 2. Open the project in your IDE.
 3. Ensure that the JavaFX SDK is properly configured in your IDE.
